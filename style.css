@@ -1,0 +1,139 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "pretendard";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 6px solid #de1d24;
+}
+
+header{
+  width: 1300px;
+  height: 120px;
+  display: flex;
+}
+
+#logo{
+  width: 240px;
+  height: 100%;
+  padding-top: 20px;
+}
+.header-right{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header-top{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  justify-content: right;
+  gap: 20px;
+  .login{
+    a{
+      padding-right: 10px;
+      &:first-child{
+        &::after{
+        content: " |";
+        padding-left: 10px;
+        color: #aaa;
+        }
+      }
+    }
+  }
+}
+.menu{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  gap: 70px;
+  font-weight: 500;
+  & > li > a{
+    display: block;
+    text-align: center;
+    height: 60px;
+    width: 90px;
+    font-size: 18px;
+    &:hover{
+      border-bottom: 4px solid #de1d24;
+    }
+  }
+}
+
+.submenu{
+  text-align: center;
+  display: none;
+  li{
+    width: 130px;
+    padding-bottom: 34px;
+    font-size: 18px;
+  }
+}
+
+.main-banner {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+body {
+  font-family: "pretendard";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  max-width: 1300px; /* 헤더의 최대 너비 설정 */
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-banner {
+  width: 100vw; /* 뷰포트 너비 전체 사용 */
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
